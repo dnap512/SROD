@@ -2,21 +2,21 @@
 import argparse
 import os
 
-import detectron2
-from detectron2.utils.logger import setup_logger
+# import detectron2
+# from detectron2.utils.logger import setup_logger
 
 # import some common libraries
-import numpy as np
-import os, json, cv2, random
-from glob import glob
-from pathlib import Path
+# import numpy as np
+# import os, json, cv2, random
+# from glob import glob
+# from pathlib import Path
 
 # import some common detectron2 utilities
-from detectron2 import model_zoo
-from detectron2.engine import DefaultPredictor
-from detectron2.config import get_cfg
-from detectron2.utils.visualizer import Visualizer
-from detectron2.data import MetadataCatalog, DatasetCatalog
+# from detectron2 import model_zoo
+# from detectron2.engine import DefaultPredictor
+# from detectron2.config import get_cfg
+# from detectron2.utils.visualizer import Visualizer
+# from detectron2.data import MetadataCatalog, DatasetCatalog
 # -
 
 parser = argparse.ArgumentParser(description='SR+OD implementation')
@@ -29,6 +29,8 @@ parser.add_argument("--degradation", type=str, default='BI',
 parser.add_argument("--scale", type=int, default=2)
 
 args = parser.parse_args()
+os.makedirs('./output_sr/', exist_ok=True)
+os.makedirs('./output_final/', exist_ok=True)
 
 if args.SR=="EDSR":
     cmd = "python edsr/main.py --model EDSR --scale {} \
