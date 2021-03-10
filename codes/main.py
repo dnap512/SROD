@@ -145,7 +145,7 @@ def main(args=None):
     od_model = args.OD
     sr_model = args.SR
 
-    degradation = args.degradataion
+    degradation = args.degradation
     scale = args.scale
 
     mode = args.mode
