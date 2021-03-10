@@ -148,18 +148,18 @@ def main(args=None):
     degradation = args.degradation
     scale = args.scale
 
-    mode = args.mode
-    save_path = args.save
-    image_path = args.dir if mode == "directory" else args.single_img
+    sr_save = args.sr_save
+    od_save = args.od_save
 
-    Path(save_path).mkdir(parents=True, exist_ok=True)
+    Path(sr_save).mkdir(parents=True, exist_ok=True)
+    Path(od_save).mkdir(parents=True, exist_ok=True)
 
     # super resolution start
     sr_perform(sr_model, degradation, scale)
 
     # object detection start
     predictor, cfg = config(od_model)
-    inference(image_path, save_path, predictor, cfg)
+    inference(sr_save, od_save, predictor, cfg)
 
 
 if __name__ == '__main__':
