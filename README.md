@@ -1,5 +1,5 @@
 # SROD
-This project was implemented based on [EDSR](https://github.com/sanghyun-son/EDSR-PyTorch), [ESRGAN](https://github.com/xinntao/ESRGAN), and [Detectorn2](https://github.com/facebookresearch/detectron2).
+This project is implementation of two-step object detection with super-resolution, to address degradation of object detection when using a bad quality image. This code was implemented based on [EDSR](https://github.com/sanghyun-son/EDSR-PyTorch), [ESRGAN](https://github.com/xinntao/ESRGAN), and [Detectorn2](https://github.com/facebookresearch/detectron2).
 
 ## Abstract
 ![SROD](https://user-images.githubusercontent.com/44395361/113983961-871f9b80-9885-11eb-910c-d89ebe729399.png)
