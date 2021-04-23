@@ -28,7 +28,7 @@ def parse_args(args) -> argparse:
     parser.add_argument('--od-save', type=str, help='save od result directory path', default="./output_od")
 
     parser.add_argument("--SR", type=str, default='EDSR', help="EDSR, DRRN, RCAN, DBPN, MSRN, ESRGAN")
-    parser.add_argument("--OD", type=str, default='FasterRCNN', help="fasterRCNN, retinanet, maskRCNN")
+    parser.add_argument("--OD", type=str, default='fasterRCNN', help="fasterRCNN, retinanet, maskRCNN")
 
     parser.add_argument("--degradation", type=str, default='BI', help="BI, BD, DN")
     parser.add_argument("--scale", type=int, default=2)
@@ -116,6 +116,7 @@ def config(od_model: str) -> DefaultPredictor:
     cfg = get_cfg()
     cfg.merge_from_file(model_zoo.get_config_file(od_model))
     cfg.MODEL.WEIGHTS = model_zoo.get_checkpoint_url(od_model)
+    cfg.MODEL.ROI_HEADS.SCORE_THRESH_TEST = 0.5
     return DefaultPredictor(cfg), cfg
 
 
