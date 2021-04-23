@@ -13,10 +13,10 @@ To address this issue, we investigated a method to fuse the super-resolution (SR
   -  [DBPN](https://github.com/alterzero/DBPN-Pytorch) [(Haris et al., CVPR'18)](https://alterzero.github.io/projects/DBPN_cvpr2018_final.pdf)
   -  [DRRN](https://github.com/tyshiwo/DRRN_CVPR17) [(Tai et al., CVPR'17)](http://cvlab.cse.msu.edu/pdfs/Tai_Yang_Liu_CVPR2017.pdf)
   -  [EDSR](https://github.com/sanghyun-son/EDSR-PyTorch) [(Lim et al., CVPRW'17)](https://openaccess.thecvf.com/content_cvpr_2017_workshops/w12/papers/Lim_Enhanced_Deep_Residual_CVPR_2017_paper.pdf)
-  -  [ESRGAN](https://github.com/xinntao/ESRGAN) [(Wang et al., ECCVW'18)](https://openaccess.thecvf.com/content_ECCVW_2018/papers/11133/Wang_ESRGAN_Enhanced_Super-Resolution_Generative_Adversarial_Networks_ECCVW_2018_paper.pdf)
   -  [MSRN](https://github.com/MIVRC/MSRN-PyTorch) [(Li et al., ECCV'18)](https://openaccess.thecvf.com/content_ECCV_2018/papers/Juncheng_Li_Multi-scale_Residual_Network_ECCV_2018_paper.pdf)
   -  [RCAN](https://github.com/yulunzhang/RCAN) [(Zhang et al., ECCV'18)](https://openaccess.thecvf.com/content_ECCV_2018/papers/Yulun_Zhang_Image_Super-Resolution_Using_ECCV_2018_paper.pdf)
   -  RRDB (Wang et al., ECCVW'18)
+  -  [ESRGAN](https://github.com/xinntao/ESRGAN) [(Wang et al., ECCVW'18)](https://openaccess.thecvf.com/content_ECCVW_2018/papers/11133/Wang_ESRGAN_Enhanced_Super-Resolution_Generative_Adversarial_Networks_ECCVW_2018_paper.pdf)
 
 - Object Detection
   -  [Detectron2](https://github.com/facebookresearch/detectron2/blob/master/MODEL_ZOO.md)
