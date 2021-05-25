@@ -40,5 +40,5 @@ To address this issue, we investigated a method to fuse the super-resolution (SR
 sh package.sh
 cd codes/
 sh download_weights.sh
-python main.py --SR EDSR --OD fasterRCNN --scale 4
+python main.py --SR EDSR --OD fasterRCNN --scale 4 --degradation BI
 ```
